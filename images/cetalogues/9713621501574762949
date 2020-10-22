@@ -1,0 +1,786 @@
+
+<style>
+
+
+.background-image 
+{
+  background-image: url('imgs/50-1920.jpg');
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+}
+
+.box .p1
+{
+color:firebrick;
+text-align:center;
+font-size:37px;
+font-family: impact, helvetica;
+line-height:43px;
+}
+    body{
+    padding:0; 
+    margin:0;
+    font-family: 'Oswald', sans-serif; 
+    text-align:center; 
+ /* background-image: url(../../images/backgrounds/10.jpeg); */
+    background-position: center center; 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    height:100vh
+    }
+    
+    .container 
+    { 
+   /* position: absolute; 
+    top: 50%; transform: 
+    translateY(-80%); 
+    right: 0px; left: 0px;  */
+  
+    text-align: center;  
+    max-width: 850px; 
+    margin: 0 auto; 
+    margin-top: 100px;
+    
+    }
+    
+    
+   /* .box {background-color:white; rgba(0,0,0,.9);  padding: 30px; text-align: center; border-radius: 10px;} */
+    
+   /* .box h1 {color: #fff; font-size: 45px; font-weight: 500; margin:0px;} */
+   /* .box h3 { font-size: 22px; font-weight: 400; margin: 7px; color: #fff; line-height: 1.1;} */
+   
+    .box p 
+    {
+
+    font-family: 'Georgia', 'Times New Roman', serif;
+    text-rendering: optimizelegibility;
+   /* font-family: arial, helvetica, georgia; */
+    font-size: 18px; 
+    font-weight:normal; 
+    color:black;
+    text-align:left;
+    padding-left:30px; 
+    padding-right:30px;
+    }
+    
+    .box .top-nav
+    {
+      text-align: center;
+    }
+    .form-control {padding: 11px; width: 100%; border: 3px solid #fdc428; border-radius: 5px; margin: 10px 0px; font-size: 20px; box-sizing:border-box;}
+    
+    
+    .submit-btn 
+    { border: 1px solid #fe7c00; padding: 10px 0px;  width: 100%; font-size: 30px; font-style: italic; margin: auto;
+    font-weight:700; color: #102951; background: linear-gradient(to top, rgba(254,124,40,6), rgba(253,193,0,4)); border-radius: 5px;  
+    margin-bottom: 20px; letter-spacing:-1px; font-family:oswald; cursor:pointer; box-sizing: border-box;
+    }
+    
+    
+    p { font-size: 15px; font-weight: 500; color:black;}
+    
+ 
+    
+    footer{ font-size: 12px;    font-weight: 500; margin-bottom:20px;}
+    @media screen and (max-width:10240px) {.container{width:90%;}}
+    @media screen and (max-width:375px) {.box h1 {font-size:42px;}.box h3 {font-size:24px;}}
+    @media screen and (max-width:375px) {.box h1 {font-size:35px;}.box h3 {font-size:22px;}.box p {font-size:13px;}.submit-btn {margin-bottom:10px;}}
+
+
+
+.top-nav
+{
+  text-align: center;
+}
+
+.exit-popup__inner p
+    {
+        text-align: center; 
+        color: firebrick; 
+        font-size: 37pt; 
+        line-height: 1; 
+        font-family: georgia, helvetica, arial; 
+        font-weight: normal; 
+        padding-left:0px;
+        width: 100%;
+        display:block;
+    }
+    
+.box 
+   {
+    background-color:white; 
+    padding: 30px; 
+    text-align: center; 
+    border-radius: 10px;
+    opacity: 1;
+   }
+   
+.box h1
+    {
+        margin-top:10px;
+        text-align: center; 
+        color: black; 
+        font-size: 44pt; 
+        line-height: 1; 
+        font-family: georgia, helvetica, arial; 
+        font-weight: normal; 
+        padding-left:0px;
+        padding-right:0px;
+        width: 100%;
+        display:block;
+    }
+    
+ .box h3
+    {
+        margin-top:0px;
+        text-align: center; 
+        color: red; 
+        font-size: 20pt; 
+        line-height: 1.1; 
+        font-family: arial, helvetica, georgia; 
+        font-weight: normal; 
+        padding-left:0px;
+        width: 100%;
+        display:block;
+    }
+
+    
+   .container
+   {
+      position: relative;
+      z-index: 2;
+   }
+
+
+
+.buttons-list
+{
+  display: table;
+}
+
+  .buttons-list__row
+  {
+    display: table-cell;
+  }
+
+  .buttons-list__row a img 
+  {
+    width:80%;
+  }
+
+  .box .button-list__text
+  {
+    text-align:center; 
+    color:#b52424; 
+    font-family: Arial;
+    font-size:20pt;    
+    padding: 15px;
+  }
+
+  .box .button-list__text img 
+  {
+    margin-top: 10px;
+  }
+
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}  
+
+
+#submitButton
+{
+  background-color: #fdc428;
+  color: #b52424;
+
+  font-size: 24px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+#contact-form--thankyou
+{
+  font-size: 18px;
+  padding: 20px;
+
+  text-align: center;
+
+  color: green;
+
+  display: none;
+}
+
+
+.box .testimonials__item
+{
+    opacity: 0;
+    transition: opacity 1s linear;
+
+    text-align:center; 
+    color:#b52424; 
+    font-family: impact, georgia, arial; 
+    font-size:40pt;
+}
+
+.testimonials__item.active
+{
+  opacity: 1;
+}
+
+
+.testimonials__item img 
+{
+  width: 90%;
+  max-width: 500px;
+}
+
+.testimonials__item1 img 
+{
+  width: 50%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.button-list__text
+{
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.button-list__text.active
+{
+  opacity: 1;
+}
+
+.box .riskreversal 
+{
+    text-align:center; 
+    color:#b52424; 
+    font-family: impact, georgia, arial; 
+    font-size:40pt;    
+}
+
+.youtube-video
+{
+  width:640px;
+  height: 360px;
+}
+
+
+@media screen and (max-width:1024px) 
+{
+
+  .top-nav a 
+  {
+    display: inline-block;
+    padding:10px 3px;
+
+    font-size: 16px;
+
+  }
+
+  .top-nav 
+  {
+    padding-bottom: 30px;
+  }
+
+
+  .box h1
+  {
+    font-size: calc(21px + 3vw);
+  }
+
+  .box h2
+  {
+    font-size: calc(19px + 3vw);
+  }
+
+  .box h3
+  {
+    font-size: calc(16px + 3vw);
+  }
+
+  .box p
+  {
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .box p img 
+  {
+    width:100%;
+    max-width: 280px;
+  }
+
+  .youtube-video
+  {
+    width:64vw;
+    height:36vw;
+  }  
+
+
+  .box .testimonials__item
+  {
+    font-size: calc(21px + 3vw);
+    padding: 0;
+    width: 100%;
+  }
+
+  .box .riskreversal
+  {
+    font-size: calc(21px + 3vw);
+  }
+
+  .box .button-list__text {
+      text-align: center;
+      color: #b52424;
+      font-family: Arial;
+      font-size: 20pt;
+      padding: 15px 0;
+      width: 100%;
+  }
+
+  .contact-h3
+  {
+      font-size: calc(21px + 3vw);
+  }
+
+  .form-control
+  {
+    font-size: calc(7px + 3vw);
+  }
+}
+
+@media screen and (max-width:421px) 
+{
+  .buttons-list
+  {
+    display: block;
+  }
+
+  .buttons-list__row
+  {
+    display: block;
+  }
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 1.5 and (min-width: 1920px)), 
+(min-resolution: 144dpi  and (min-width: 1920px))
+{ 
+  .background-image 
+  { 
+    background-image: url();
+  }
+}
+
+
+.video-container {
+position: relative;
+padding-bottom: 13px;
+padding-top: 8px;   
+/* overflow: hidden; */
+
+
+
+    margin: 0 auto;
+    transform: translateX(-54%);
+    margin-left: 50%; 
+    
+
+    width: 82vw;
+    height:auto;
+
+
+    max-width:  790px;
+}
+
+
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+    width: 82vw;
+    height: 44.97vw;
+
+    max-width:  790px;
+    max-height: 444px;
+}
+
+
+  .video-container iframe
+  {
+    position:   relative;   
+  }
+
+
+@media  (max-width: 500px)
+{
+
+    .video-container iframe{
+
+          width: 72.6vw;
+          height: 41.97vw;
+    }
+
+    .video-container
+    {
+        width: 72.6vw;
+    }
+
+}
+
+@media  (min-width: 1024px)
+{
+    .video-container
+    {
+       max-width: 733px; 
+    }
+    .video-container iframe, {
+
+            max-width: 733px;
+            max-height: 417px;
+    }
+}
+
+.exit-popup--overlay
+{
+    position: fixed;
+    z-index: 9999;
+
+    background-color: #000;
+
+    opacity:0.5;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+
+}
+
+    .exit-popup--overlay.open
+    {
+        display: block;
+        top:0;
+    }
+
+.exit-popup
+{
+    font-size: 10px;
+    position: fixed;
+    left:0; right:0;
+
+    margin: 0 auto;
+
+    width:70em;
+
+    border:5px solid #cccccc;
+    background-color:#fffdff;
+
+    color:#2f2f2f;
+
+
+    z-index:10000;
+
+    top:-200%;
+
+    transition: top 0.5s linear;
+}
+
+    .exit-popup form 
+    {
+        width: 100%;
+    }
+
+
+    .exit-popup.open 
+    {
+        top:19%;
+        
+
+    }
+
+
+    .exit-popup .exit-popup__close
+    {
+        background-color: #000;
+        border-radius: 500px;
+
+        width:4em;
+
+        position: absolute;
+
+        right:-2em;
+        top:-2em;
+
+        cursor: pointer;
+    }
+
+        .exit-popup .exit-popup__close img
+        {
+            transform:scale(1.1);
+            border-radius: 500px;
+
+            width:100%;
+        }
+
+    .exit-popup__inner
+    {
+        display: flex;
+        justify-content: space-between;
+
+        margin: 1em;
+
+    }
+
+        .exit-popup__inner .exit-popup__col:nth-child(2)
+        {
+            padding-left: 2.5em; 
+            padding-right: 2.5em; 
+            text-align: center;
+        }
+
+
+
+    .exit-popup h2
+    {
+        font-size: 3.6em;
+        padding-bottom: 0.7em;
+        line-height: 1.3;
+        text-align: left;
+        margin:0;
+    }
+
+/*    .exit-popup__inner p
+    {
+
+        
+        text-align: center; 
+        color: firebrick; 
+        font-size: 37pt; 
+        line-height: 1; 
+        font-family: georgia, helvetica, arial; 
+        font-weight: normal; 
+        padding-left:0px;
+        width: 100%;
+        display:block;
+    } */
+    
+     .exit-popup__inner .exit-popup__col
+     {
+         width: 100%;
+     }
+
+
+
+
+    .exit-popup__inner--form
+    {
+        background-color:#dddddd;
+
+        display: flex;
+        justify-content: space-between;
+
+        padding: 4em 3em;        
+    }
+
+        .exit-popup__inner--form .text.form-control
+        {
+            font-size: 1.6em;
+            padding:0.7em;
+            border: 1px solid grey;
+            max-width: 300px;
+            border-radius:0;
+        }
+
+        .exit-popup__inner--form .submit-btn
+        {
+            font-size: 1.6em;
+            padding:0.69em 1em;
+            margin-left:1em;
+
+            max-width:200px;
+            background:none;
+            background-color: #659a17;
+
+            border:1px solid #659a17;
+            color:#fff;
+
+            font-family: Arial;
+            border-radius:0;
+        }        
+
+
+
+@media only screen and (max-width:800px)
+{
+    .exit-popup
+    {
+        font-size: 8px;
+    }
+
+
+    .exit-popup__inner--form .text.form-control
+    {
+        max-width:80%;
+        min-width:250px;
+    }
+
+    .exit-popup__inner--form .submit-btn
+    {
+        max-width:80%;
+        min-width:250px;
+        margin-left: 0;
+    }    
+    
+    
+   .exit-popup__inner p
+    {
+
+        
+        text-align: center; 
+        color: firebrick; 
+        font-size: 16pt;
+        line-height: 31pt;
+        font-family: georgia, helvetica, arial; 
+        font-weight: regular; 
+        padding-left:0px;
+        width: 100%;
+        display:block;
+    }    
+}      
+
+
+@media only screen and (max-width:620px)
+{
+    .exit-popup
+    {
+        width:80%;
+        min-width: 300px;
+    }
+
+    .exit-popup.open 
+    {
+        top:30px;
+        margin-bottom:20px;
+    }
+
+    .exit-popup__inner
+    {
+        flex-wrap: wrap;
+    }
+
+    .exit-popup__col
+    {
+        min-width: 280px;
+    }
+}  
+
+@media only screen and (max-height:620px)
+{
+    .exit-popup.open 
+    {
+        top:30px;
+        margin-bottom:20px;
+    }
+}
+
+@media only screen and (max-height:550px)
+{
+    .exit-popup
+    {
+        font-size: 8px;
+    }
+    .exit-popup__inner p
+    {
+        font-size: 3em;
+        line-height: 1.5;
+    }
+
+    .exit-popup__inner--form
+    {
+        padding: 1em 1em;
+    }
+
+    .exit-popup__inner p
+    {
+        margin:0;
+    }
+}
+
+
+@media only screen and (max-height:370px)
+{
+    .exit-popup__inner p
+    {
+        font-size: 2.2em;
+    }
+}
+.box .p2 { text-align:center; }
+
+.box .p3{
+text-align:left;
+padding-left:120px;
+padding-right:120px;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 1.5 and (min-width: 1920px)), 
+(min-resolution: 144dpi  and (min-width: 1920px))
+{ 
+  .background-image 
+  { 
+    background-image: url('imgs/50-3200.jpg');
+  }
+}
+
+
+</style>
+
+<div class="buttons-list">
+
+          <div class="buttons-list__row">
+
+             <a name="buynow"></a>
+             <p class="button-list__text">2000 Unique Clicks - $1,199 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout1.jpg"></a> </p>
+             <p class="button-list__text">1000 Unique Clicks - $689 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout2.jpg"></a> </p> 
+             <p class="button-list__text">500 Unique Clicks - $369 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout4.jpg"></a> </p> 
+             <p class="button-list__text">300 Unique Clicks - $239 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout3.jpg"></a> </p>
+             <p class="button-list__text">200 Unique Clicks - $169 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout5.jpg"></a> </p>
+             
+          </div>
+          <div class="buttons-list__row">
+       	     <p class="button-list__text">2000 T1 Only Clicks - $1,699 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout6.jpg"></a> </p>
+       	     <p class="button-list__text">1000 T1 Only Clicks - $939 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout8.jpg"></a> </p> 
+             <p class="button-list__text">500 T1 Only  Clicks - $499<br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout7.jpg"></a> </p> 
+             <p class="button-list__text">300 T1 Only  Clicks - $329 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout9.jpg"></a> </p>
+             <p class="button-list__text">200 T1 Only  Clicks - $239 <br> <a href="http://www.trafficstarz.com/step1.html" target="_blank"><img src="imgs/checkout10.jpg"></a> </p>
+          </div>
+        </div>
